@@ -13,11 +13,13 @@
       - HomeController.php
       - AuthController.php (Login, User, Register, Edit, Profile)
       - AdminController.php
+      - DevisController.php
     - /managers
       - AbstractManager.php
       - UserManager.php (Login, User, Register, Edit, Profile)
       - HomeManager.php 
       - AdminMananger.php
+      - DevisManager.php
     - /services
       -view
         /user
@@ -26,6 +28,7 @@
           -register.phtml
           -profile.phtml
           -edit_profile.phtml
+          -devis.phtml
         /admin
           -admin-layout.phtml
 
