@@ -1,1 +1,25 @@
+Table: users
 
+id (Clé primaire)
+username
+email
+password
+
+Table: profiles
+
+id (Clé primaire)
+user_id (Clé étrangère référençant l'utilisateur correspondant dans la table "users")
+first_name
+last_name
+description
+
+Table: admin_pages
+
+id (Clé primaire)
+title
+content
+
+Table: admin_page_user
+
+admin_page_id (Clé étrangère référençant une page administrative dans la table "admin_pages")
+user_id (Clé étrangère référençant un utilisateur dans la table "users")
