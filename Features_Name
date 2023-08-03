@@ -1,1 +1,26 @@
+Sous-fonctionnalités
 
+.Back-Office (interface Admin)
+  Gérer les contenus du site web
+  Gérer les utilisateurs du site web
+  Gérer les commandes du site web
+.Page d'accueil bien designé
+  Liste de projets - Réalisations accompli en images
+  Liste de services proposées
+  Présentation de l'entreprise
+  Liste d'avantages
+  Intégration des réseaux sociaux
+.Carte Zone d'intervention de l'entreprise
+.Contactez Formualire - Devis
+  Envoyer un message à l'entreprise
+  Demander un devis
+.Générer un compte (Création, Editez, Ajouter des informations)
+  Créer un compte
+  Modifier les informations de son compte
+  Ajouter des informations à son compte
+
+Contraintes
+
+Le site web doit être responsive, c'est-à-dire qu'il doit s'afficher correctement sur tous les types d'appareils, y compris les smartphones et les tablettes.
+Le site web doit être sécurisé, c'est-à-dire qu'il doit utiliser des mesures de sécurité pour protéger les données des utilisateurs.
+Le site web doit être optimisé pour les moteurs de recherche, c'est-à-dire qu'il doit être facilement trouvé par les utilisateurs sur les moteurs de recherche comme Google.
