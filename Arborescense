@@ -33,10 +33,22 @@
     - /managers
       - AbstractManager.php
       - UserManager.php
+      - HomeMananger.php
+      - LoginMananger.php
+      - RegisterMananger.php
+      - ProfileMananger.php
+      - AdminMananger.php
+      - EditProfileMananger.php
     - /services
       -view
-
-
+        /user
+          -homepage.phtml
+          -login.phtml
+          -register.phtml
+          -profile.phtml
+          -edit_profile.phtml
+        /admin
+          -admin-layout.phtml
 
 Routes :
 
@@ -45,27 +57,27 @@ Accueil :
 URL : /Projet-Soutenance/
 Contrôleur : AbstractController.php (traité dans le point d'entrée index.php)
 Action : HomeController
-Vue : homepage.php
+Vue : homepage.phtml
 Page de connexion :
 
 URL : /Projet-Soutenance/login
 Contrôleur : AbstractController.php (traité dans le point d'entrée index.php)
 Action : LoginController
-Vue : login.php
+Vue : login.phtml
 
 Page d'inscription :
 
 URL : /Projet-Soutenance/register
 Contrôleur : AbstractController.php (traité dans le point d'entrée index.php)
 Action : RegisterController
-Vue : register.php
+Vue : register.phtml
 
 Profil utilisateur :
 
 URL : /Projet-Soutenance/user/profile
 Contrôleur : UserController.php
 Action : ProfileController.php
-Vue : profile.php
+Vue : profile.phtml
 Modèle : UserModel.php
 
 Édition du profil utilisateur :
@@ -73,7 +85,7 @@ Modèle : UserModel.php
 URL : /Projet-Soutenance/user/edit_profile
 Contrôleur : UserController.php
 Action : EditProfileController.php
-Vue : edit_profile.php
+Vue : edit_profile.phtml
 Modèle : UserModel.php
 
 Page d'administration :
