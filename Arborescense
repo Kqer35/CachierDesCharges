@@ -1,0 +1,91 @@
+- /Projet-Soutenance
+  - index.php (Point d'entrée)
+  - /assets
+    - /css
+      - style.sass
+      - style.css
+    - /js
+      - script.js
+
+    - /models
+      - UserModel.php
+    - /views
+      - /user
+        - profile.php
+        - edit_profile.php
+      - /pages
+          - /admin
+              -admin-layout.phtml
+        - homepage.php
+        - login.php
+        - register.php
+        - profile.php
+        - edit_profile.php
+    - /controllers
+      - AbstractController.php
+      - HomeController.php
+      - LoginController.php
+      - UserController.php
+      - RegisterController.php
+      - ProfileController.php
+      - AdminController.php
+      - EditProfileController.php
+    - /managers
+      - AbstractManager.php
+      - UserManager.php
+    - /services
+      -view
+
+
+
+Routes :
+
+Accueil :
+
+URL : /Projet-Soutenance/
+Contrôleur : AbstractController.php (traité dans le point d'entrée index.php)
+Action : HomeController
+Vue : homepage.php
+Page de connexion :
+
+URL : /Projet-Soutenance/login
+Contrôleur : AbstractController.php (traité dans le point d'entrée index.php)
+Action : LoginController
+Vue : login.php
+
+Page d'inscription :
+
+URL : /Projet-Soutenance/register
+Contrôleur : AbstractController.php (traité dans le point d'entrée index.php)
+Action : RegisterController
+Vue : register.php
+
+Profil utilisateur :
+
+URL : /Projet-Soutenance/user/profile
+Contrôleur : UserController.php
+Action : ProfileController.php
+Vue : profile.php
+Modèle : UserModel.php
+
+Édition du profil utilisateur :
+
+URL : /Projet-Soutenance/user/edit_profile
+Contrôleur : UserController.php
+Action : EditProfileController.php
+Vue : edit_profile.php
+Modèle : UserModel.php
+
+Page d'administration :
+
+URL : /Projet-Soutenance/admin
+Contrôleur : AdminController.php
+Action : AdminController.php
+Vue : admin-layout.phtml
+
+Fichiers CSS :
+URL : /Projet-Soutenance/assets/css/style.css
+Aucun contrôleur, c'est un fichier statique.
+
+Fichiers JavaScript :
+URL : /Projet-Soutenance/assets/js/script.js
