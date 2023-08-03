@@ -24,21 +24,13 @@
     - /controllers
       - AbstractController.php
       - HomeController.php
-      - LoginController.php
-      - UserController.php
-      - RegisterController.php
-      - ProfileController.php
+      - AuthController.php (Login, User, Register, Edit, Profile)
       - AdminController.php
-      - EditProfileController.php
     - /managers
       - AbstractManager.php
-      - UserManager.php
-      - HomeMananger.php
-      - LoginMananger.php
-      - RegisterMananger.php
-      - ProfileMananger.php
+      - UserManager.php (Login, User, Register, Edit, Profile)
+      - HomeManager.php 
       - AdminMananger.php
-      - EditProfileMananger.php
     - /services
       -view
         /user
