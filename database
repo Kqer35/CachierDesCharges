@@ -1,25 +1,36 @@
-Table: users
+Table users
 
-id (Clé primaire)
+id (clé primaire)
 username
 email
 password
-
-Table: profiles
-
-id (Clé primaire)
-user_id (Clé étrangère référençant l'utilisateur correspondant dans la table "users")
 first_name
 last_name
 description
 
-Table: admin_pages
+Table profiles
 
-id (Clé primaire)
+id (clé primaire)
+user_id (clé étrangère vers users)
+profile_image
+bio
+location
+website
+social_media
+
+
+Table admin_pages 
+
+id (clé primaire)
 title
 content
 
-Table: admin_page_user
+Table admin_page_user
 
-admin_page_id (Clé étrangère référençant une page administrative dans la table "admin_pages")
-user_id (Clé étrangère référençant un utilisateur dans la table "users")
+id (clé primaire)
+admin_page_id (clé étrangère vers admin_pages)
+user_id (clé étrangère vers users)
+permission (peut être read, write ou delete)
+
+
+
