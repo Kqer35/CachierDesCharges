@@ -1,36 +1,42 @@
-Table users
+Table : users
 
-id (clé primaire)
+Champs :
+id (Clé primaire)
 username
 email
 password
-first_name
-last_name
-description
-
-Table profiles
-
-id (clé primaire)
-user_id (clé étrangère vers users)
-profile_image
-bio
-location
-website
-social_media
+address
+phone_number
 
 
-Table admin_pages 
+Table : devis
 
-id (clé primaire)
+Champs :
+id (Clé primaire)
+user_id (Clé étrangère vers la table users)
 title
-content
+description
+status (par exemple, "En attente", "Approuvé", "Rejeté")
 
-Table admin_page_user
 
-id (clé primaire)
-admin_page_id (clé étrangère vers admin_pages)
-user_id (clé étrangère vers users)
-permission (peut être read, write ou delete)
+Table : roles
 
+Champs :
+id (Clé primaire)
+name (par exemple, "Admin", "User")
+
+Table : user_roles
+
+Champs :
+user_id (Clé étrangère vers la table users)
+role_id (Clé étrangère vers la table roles)
+
+Table : devis_history
+
+Champs :
+id (Clé primaire)
+devis_id (Clé étrangère vers la table devis)
+status (par exemple, "En attente", "Approuvé", "Rejeté")
+timestamp
 
 
