@@ -5,7 +5,6 @@ id (Clé primaire)
 username
 email
 password
-address
 
 Table : devis
 
