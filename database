@@ -10,11 +10,34 @@ Table : devis
 
 Champs :
 id (Clé primaire)
-user_id (Clé étrangère vers la table users)
+devis_user_id (Clé étrangère vers la table users)
 title
 description
 status (par exemple, "En attente", "Approuvé", "Rejeté")
+timestamp
 
+Table : devis_history
+
+Champs :
+id (clé primaire)
+status
+timestamp
+devis_id
+
+Table : images
+
+Champs :
+id (clé primaire)
+realisation_id
+image_path
+
+Table : realisations
+
+Champs :
+id (clé primaire)
+title
+description
+created_at
 
 Table : roles
 
@@ -28,12 +51,5 @@ Champs :
 user_id (Clé étrangère vers la table users)
 role_id (Clé étrangère vers la table roles)
 
-Table : devis_history
-
-Champs :
-id (Clé primaire)
-devis_id (Clé étrangère vers la table devis)
-status (par exemple, "En attente", "Approuvé", "Rejeté")
-timestamp
 
 
