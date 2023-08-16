@@ -7,30 +7,56 @@
     - /js
       - script.js
     - /models
-      - UserModel.php
+      - Devis.php
+      - DevisHistory.php
+      - Image.php
+      - Realisation.php
+      - User.php 
+      - UserRole.php
     - /controllers
       - AbstractController.php
-      - HomeController.php
-      - AuthController.php (Login, User, Register, Edit, Profile)
-      - AdminController.php
+      - AccountController.php
+      - AuthController.php
+      - DashboardController.php
       - DevisController.php
+      - HomeController.php
+      - ImageController.php
+      - PrestationsController.php
+      - RealisationsController.php
     - /managers
       - AbstractManager.php
-      - UserManager.php (Login, User, Register, Edit, Profile)
-      - HomeManager.php 
-      - AdminMananger.php
+      - AccountManager.php
+      - DashboardManager.php
       - DevisManager.php
-    - /services
-      -view
-        /user
-          -homepage.phtml
-          -login.phtml
-          -register.phtml
-          -profile.phtml
-          -edit_profile.phtml
-          -devis.phtml
-        /admin
-          -admin-layout.phtml
+      - ImageManager.php
+      - PrestationsManager.php
+      - RealisationsManager.php
+      - UserManager.php
+- partials
+  /admin
+    - _header_admin.phtml
+  /connected
+    - _footer.phtml
+    - _header.phtml
+  - _footer.phtml
+  - _header.phtml
+- /services
+  - autoload.php
+  - Router.php
+- views
+    /users
+      /admin
+          -dashboard_actions.php
+          -dashboard_admin.phtml
+      -account.phtml
+      -devis.phtml
+      -historic_devis.phtml
+      -homepage.phtml
+      -login.phtml
+      -prestations.phtml
+      -profile.phtml
+      -realisations.phtml
+      -register.phtml
 
 Routes :
 
@@ -40,7 +66,7 @@ URL : /Projet-Soutenance/
 Contrôleur : AbstractController.php (traité dans le point d'entrée index.php)
 Action : HomeController
 Vue : homepage.phtml
-Page de connexion :
+Page de connexion : (Accueil, Nos prestations, Nos réalisations, Contact, Mon Compte, Dashboard, Connecter/Deconnexion)
 
 URL : /Projet-Soutenance/login
 Contrôleur : AbstractController.php (traité dans le point d'entrée index.php)
@@ -57,25 +83,21 @@ Vue : register.phtml
 Profil utilisateur :
 
 URL : /Projet-Soutenance/user/profile
-Contrôleur : UserController.php
-Action : ProfileController.php
+Contrôleur : AccountController.php
 Vue : profile.phtml
-Modèle : UserModel.php
 
 Édition du profil utilisateur :
 
-URL : /Projet-Soutenance/user/edit_profile
-Contrôleur : UserController.php
-Action : EditProfileController.php
-Vue : edit_profile.phtml
-Modèle : UserModel.php
+URL : /Projet-Soutenance/views/users/profile
+Contrôleur : AccountController.php
+Action : AccountController.php
+Vue : profile.phtml
 
 Page d'administration :
 
-URL : /Projet-Soutenance/admin
-Contrôleur : AdminController.php
-Action : AdminController.php
-Vue : admin-layout.phtml
+URL : /Projet-Soutenance/views/users/admin
+Contrôleur : DashboardController.php
+Vue : dashboard_admin.phtml
 
 Fichiers CSS :
 URL : /Projet-Soutenance/assets/css/style.css
