@@ -3,17 +3,19 @@ Sous-fonctionnalités
 .Back-Office (interface Admin)
   Gérer les contenus du site web
   Gérer les utilisateurs du site web
-  Gérer les commandes du site web
+
 .Page d'accueil bien designé
   Liste de projets - Réalisations accompli en images
   Liste de services proposées
   Présentation de l'entreprise
   Liste d'avantages
   Intégration des réseaux sociaux
+
 .Carte Zone d'intervention de l'entreprise
 .Contactez Formualire - Devis
   Envoyer un message à l'entreprise
   Demander un devis
+
 .Générer un compte (Création, Editez, Ajouter des informations)
   Créer un compte
   Modifier les informations de son compte
@@ -22,5 +24,5 @@ Sous-fonctionnalités
 Contraintes
 
 Le site web doit être responsive, 
-Le site web doit être sécurisé
+Le site web doit être sécurisé (injections)
 Le site web doit être optimisé pour les moteurs de recherche
