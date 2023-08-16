@@ -1,6 +1,12 @@
 Features envisagées :
 
->  Back-Office (interface Admin)                 -> MOI
+>  Back-Office (interface Admin)   -> MOI
+    - Ajouter des réalisations
+    - Ajouter des prestations
+    - Afficher tous les users du site
+    - Modifier les rôles des users
+    - Supprimer un User du site & de la BDD
+
 >  Page d'accueil bien designé                   -> CLIENT POTENTIEL
     - Liste de projets - Réalisations accompli en images 
     - Liste de services proposées                         
